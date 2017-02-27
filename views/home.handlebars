@@ -1,0 +1,15 @@
+<p style = "margin-bottom: 10vh; font-size: 30px; text-align:center;"><a href="/add"> Add a new song. </a></p>
+<p style = "font-size:35px"> Songs people have added: </p>
+{{#each songs}}
+<div>
+  
+  
+
+  <p>"{{title}}" by {{artist}}. This song was added by {{submitter}}.</p>
+  <p><a href="/songs/{{title}}/edit">Edit this song.</a> <a href="/songs/{{title}}/delete">Delete this song.</a></p>
+
+
+
+
+</div>
+{{/each}}

@@ -1,0 +1,23 @@
+{{#if message}}
+  <p style="background-color: #1f65a3; color:white; text-align:center; padding: 20px">{{message}}</p>
+{{/if}}
+
+<form style = "text-align:center;" action="/songs/{{song.title}}" method="post">
+
+  <div>
+    <input type="text" placeholder="Title of your favorite song" name="title" value="{{song.title}}">
+  </div>
+
+  <div>
+    <input type="text" placeholder="Name of artist(s) who created the song." name="artist" value="{{song.artist}}">
+  </div>
+
+  <div>
+    <input type="text" placeholder="Who are you?"  name="submitter" value="{{song.submitter}}">
+  </div>
+
+
+  <div>
+    <input type="submit" value="Update your song's info.">
+  </div>
+</form>
